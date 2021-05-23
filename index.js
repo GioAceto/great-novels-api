@@ -4,7 +4,7 @@ const app = express()
 const PORT = 1400
 
 app.all('*', (req, res) => {
-  return res.status(404).send('working')
+  return res.status(404).send('404 PAGE NOT FOUND')
 })
 
 app.listen(PORT, () => {
