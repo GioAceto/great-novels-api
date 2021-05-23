@@ -1,10 +1,10 @@
 const models = require('../models')
 
-const getAllGenres = async (request, response) => {
+const getAllGenres = async (req, res) => {
 
 }
 
-const getGenreById = async (request, response) => {
+const getGenreById = async (req, res) => {
 
 }
 
