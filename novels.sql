@@ -117,6 +117,3 @@ INSERT INTO booksGenres (bookId, genreId) VALUES (12, 11);
 INSERT INTO booksGenres (bookId, genreId) VALUES (13, 11);
 INSERT INTO booksGenres (bookId, genreId) VALUES (14, 12);
 INSERT INTO booksGenres (bookId, genreId) VALUES (15, 13);
-
-
-SELECT * FROM booksGenres;
