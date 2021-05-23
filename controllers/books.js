@@ -10,7 +10,15 @@ const getAllBooks = async (req, res) => {
 }
 
 const getBookById = async (req, res) => {
+  const { id } = req.params
 
+  const book = await models.Books.findOne({
+    where: { id },
+    include: [{ model: models.Authors }, { model: models.Genres }]
+  })
+
+  return book
+    ? res.send(book) : res.sendStatus(404)
 }
 
 module.exports = { getAllBooks, getBookById }
