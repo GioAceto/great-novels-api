@@ -1,7 +1,12 @@
 const express = require('express')
+const { getAllAuthors, getAuthorById } = require('./controllers/authors')
 
 const app = express()
 const PORT = 1400
+
+app.get('/authors', getAllAuthors)
+
+app.get('/authors/:id', getAuthorById)
 
 app.all('*', (req, res) => {
   return res.status(404).send('404 PAGE NOT FOUND')
