@@ -108,17 +108,64 @@ INSERT INTO genres (name) VALUES ("Time Travel");
 INSERT INTO genres (name) VALUES ("African Literature");
 
 INSERT INTO booksGenres (bookId, genreId) VALUES (1, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (1, 2);
+INSERT INTO booksGenres (bookId, genreId) VALUES (1, 3);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (2, 1);
 INSERT INTO booksGenres (bookId, genreId) VALUES (2, 2);
-INSERT INTO booksGenres (bookId, genreId) VALUES (3, 3);
-INSERT INTO booksGenres (bookId, genreId) VALUES (4, 4);
-INSERT INTO booksGenres (bookId, genreId) VALUES (5, 3);
+INSERT INTO booksGenres (bookId, genreId) VALUES (2, 4);
+INSERT INTO booksGenres (bookId, genreId) VALUES (2, 3);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (3, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (3, 5);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (4, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (4, 5);
+INSERT INTO booksGenres (bookId, genreId) VALUES (4, 6);
+INSERT INTO booksGenres (bookId, genreId) VALUES (4, 7);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (5, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (5, 5);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (6, 1);
 INSERT INTO booksGenres (bookId, genreId) VALUES (6, 5);
-INSERT INTO booksGenres (bookId, genreId) VALUES (7, 6);
-INSERT INTO booksGenres (bookId, genreId) VALUES (8, 7);
-INSERT INTO booksGenres (bookId, genreId) VALUES (9, 8);
-INSERT INTO booksGenres (bookId, genreId) VALUES (10, 9);
-INSERT INTO booksGenres (bookId, genreId) VALUES (11, 10);
-INSERT INTO booksGenres (bookId, genreId) VALUES (12, 11);
-INSERT INTO booksGenres (bookId, genreId) VALUES (13, 11);
-INSERT INTO booksGenres (bookId, genreId) VALUES (14, 12);
-INSERT INTO booksGenres (bookId, genreId) VALUES (15, 13);
+INSERT INTO booksGenres (bookId, genreId) VALUES (6, 8);
+INSERT INTO booksGenres (bookId, genreId) VALUES (6, 9);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (7, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (7, 5);
+INSERT INTO booksGenres (bookId, genreId) VALUES (7, 10);
+INSERT INTO booksGenres (bookId, genreId) VALUES (7, 11);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (8, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (8, 12);
+INSERT INTO booksGenres (bookId, genreId) VALUES (8, 13);
+INSERT INTO booksGenres (bookId, genreId) VALUES (8, 14);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (9, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (9, 12);
+INSERT INTO booksGenres (bookId, genreId) VALUES (9, 15);
+INSERT INTO booksGenres (bookId, genreId) VALUES (9, 2);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (10, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (10, 7);
+INSERT INTO booksGenres (bookId, genreId) VALUES (10, 12);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (11, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (11, 12);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (12, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (12, 15);
+INSERT INTO booksGenres (bookId, genreId) VALUES (12, 16);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (13, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (13, 15);
+INSERT INTO booksGenres (bookId, genreId) VALUES (13, 16);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (14, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (14, 15);
+INSERT INTO booksGenres (bookId, genreId) VALUES (14, 17);
+
+INSERT INTO booksGenres (bookId, genreId) VALUES (15, 1);
+INSERT INTO booksGenres (bookId, genreId) VALUES (15, 5);
+INSERT INTO booksGenres (bookId, genreId) VALUES (15, 18);
