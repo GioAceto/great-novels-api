@@ -22,3 +22,4 @@ const getAuthorById = async (req, res) => {
 }
 
 module.exports = { getAllAuthors, getAuthorById }
+
