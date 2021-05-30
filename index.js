@@ -8,7 +8,7 @@ const PORT = 1337
 
 app.get('/authors', getAllAuthors)
 
-app.get('/authors/:id', getAuthorByIdOrName)
+app.get('/authors/:identifier', getAuthorByIdOrName)
 
 app.get('/genres', getAllGenres)
 
@@ -16,7 +16,7 @@ app.get('/genres/:id', getGenreById)
 
 app.get('/novels', getAllNovels)
 
-app.get('/novels/:id', getNovelByIdOrTitle)
+app.get('/novels/:identifier', getNovelByIdOrTitle)
 
 app.all('*', (req, res) => {
   return res.status(404).send('404 PAGE NOT FOUND')
