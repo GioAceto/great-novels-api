@@ -49,5 +49,16 @@ module.exports = {
       },
       deletedAt: { type: Sequelize.DATE },
     })
+  },
+
+  down: async (queryInterface) => {
+
+    await queryInterface.dropTable('authors')
+
+    await queryInterface.dropTable('genres')
+
+    await queryInterface.dropTable('novels')
+
+    return queryInterface.dropTable('novelsGenres')
   }
 }
