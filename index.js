@@ -1,7 +1,7 @@
 const express = require('express')
 const { getAllAuthors, getAuthorById } = require('./controllers/authors')
 const { getAllGenres, getGenreById } = require('./controllers/genres')
-const { getAllNovels, getNovelById } = require('./controllers/Novels')
+const { getAllNovels, getNovelById } = require('./controllers/novels')
 
 const app = express()
 const PORT = 1400
@@ -14,9 +14,9 @@ app.get('/genres', getAllGenres)
 
 app.get('/genres/:id', getGenreById)
 
-app.get('/Novels', getAllNovels)
+app.get('/novels', getAllNovels)
 
-app.get('/Novels/:id', getNovelById)
+app.get('/novels/:id', getNovelById)
 
 app.all('*', (req, res) => {
   return res.status(404).send('404 PAGE NOT FOUND')
