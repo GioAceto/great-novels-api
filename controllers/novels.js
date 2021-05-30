@@ -9,7 +9,7 @@ const getAllNovels = async (req, res) => {
   return res.send(novels)
 }
 
-const getNovelById = async (req, res) => {
+const getNovelByIdOrName = async (req, res) => {
   const { id } = req.params
 
   const novel = await models.Novels.findOne({
@@ -21,4 +21,4 @@ const getNovelById = async (req, res) => {
     ? res.send(novel) : res.sendStatus(404)
 }
 
-module.exports = { getAllNovels, getNovelById }
+module.exports = { getAllNovels, getNovelByIdOrName }

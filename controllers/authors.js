@@ -6,7 +6,7 @@ const getAllAuthors = async (req, res) => {
   return res.send(authors)
 }
 
-const getAuthorById = async (req, res) => {
+const getAuthorByIdOrName = async (req, res) => {
   const { id } = req.params
 
   const author = await models.Authors.findOne({
@@ -21,5 +21,5 @@ const getAuthorById = async (req, res) => {
     ? res.send(author) : res.sendStatus(404)
 }
 
-module.exports = { getAllAuthors, getAuthorById }
+module.exports = { getAllAuthors, getAuthorByIdOrName }
 
