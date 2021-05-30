@@ -114,5 +114,12 @@ module.exports = {
 
   down: async (queryInterface) => {
 
+    await queryInterface.bulkDelete('authors')
+
+    await queryInterface.bulkDelete('genres')
+
+    await queryInterface.bulkDelete('novels')
+
+    return queryInterface.bulkDelete('novelsGenres')
   }
 }
