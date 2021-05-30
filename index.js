@@ -4,7 +4,7 @@ const { getAllGenres, getGenreById } = require('./controllers/genres')
 const { getAllNovels, getNovelById } = require('./controllers/novels')
 
 const app = express()
-const PORT = 1400
+const PORT = 1337
 
 app.get('/authors', getAllAuthors)
 
