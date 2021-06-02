@@ -6,13 +6,18 @@ const getAllAuthors = async (req, res) => {
   return res.send(authors)
 }
 
-const getAuthorById = async (req, res) => {
-  const { id } = req.params
+const getAuthorByIdOrName = async (req, res) => {
+  const { identifier } = req.params
 
   const author = await models.Authors.findOne({
-    where: { id },
+    where: {
+      [models.Sequelize.Op.or]: [
+        { id: identifier },
+        { nameLast: { [models.Sequelize.Op.like]: `%${identifier}%` } },
+      ]
+    },
     include: [{
-      model: models.Books,
+      model: models.Novels,
       include: [{ model: models.Genres }]
     }]
   })
@@ -21,5 +26,5 @@ const getAuthorById = async (req, res) => {
     ? res.send(author) : res.sendStatus(404)
 }
 
-module.exports = { getAllAuthors, getAuthorById }
+module.exports = { getAllAuthors, getAuthorByIdOrName }
 
